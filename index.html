@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Typed.js Example</title>
+    <title>Mahi Bashar | Full Stack Developer</title>
     <style>
-        .container {
-            display: flex;
+        .container{
             width: 100%;
             height: 100vh;
+            display: flex;
             align-items: center;
             justify-content: center;
-            background-color: #f0f0f0;
+        }
+        .animate-container {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            min-height: 80px;
         }
 
         h1 {
@@ -20,11 +26,38 @@
             overflow: hidden;
             border-right: 2px solid black; /* Cursor effect */
         }
+
+        .resume-container{
+            width: 100%;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .resume-container a{
+            text-decoration: none;
+            display: inline-block;
+            border: 2px solid #222;
+            padding: 15px 25px;
+            border-radius: 10px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 20px;
+            color: #222;
+        }
+
     </style>
 </head>
 <body>
+
 <div class="container">
-    <h1 id="typed-output"></h1>
+    <div class="inner-container">
+        <div class="animate-container">
+            <h1 id="typed-output"></h1>
+        </div>
+        <div class="resume-container">
+            <a download="download" href="resume.pdf">Download Resume</a>
+        </div>
+    </div>
 </div>
 
 <!-- Include Typed.js -->
