@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typed.js Example</title>
+    <style>
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            font-family: monospace;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid black; /* Cursor effect */
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 id="typed-output"></h1>
+</div>
+
+<!-- Include Typed.js -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    // Initialize Typed.js
+    var options = {
+        strings: [
+            "Hi there, This is Mahi Bashar",
+            "I am a Full Stack Developer",
+            "You can contact me at mahibashar.dev@gmail.com."
+        ],
+        typeSpeed: 50,  // Speed of typing (milliseconds per character)
+        backSpeed: 30,   // Speed of backspacing (milliseconds per character)
+        backDelay: 1000, // Delay before starting backspacing
+        startDelay: 500, // Delay before starting typing
+        loop: true,      // Loop the animation
+        showCursor: true // Show cursor (optional)
+    };
+
+    var typed = new Typed("#typed-output", options);
+</script>
+</body>
+</html>
